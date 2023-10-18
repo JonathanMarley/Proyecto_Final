@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+
+  <style>
+     * {
+            font-family: 'Monseran';
+            margin: 0;
+            padding: 0;
+            background-color: lavender;
+
+
+        }
+
+        .menu {
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+            line-height: 60px;
+            padding: 0.6%;
+            background-color: lavender;
+            /*fondo menu*/
+        }
+
+        .menu h2 {
+            padding: 0.2%;
+            max-width: 15%;
+            height: auto;
+            color: black;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: darkgray;
+            /*letra menu*/
+            padding: 26px 20px 26px 12px;
+            font-size: 20px;
+
+        }
+
+        .menu a:hover {
+            /*background-color:black ;  cambio al de l aletra al darle click*/
+            font-size: 20px;
+            color: black;
+            /*cambio al de l aletra */
+            width: 80px;
+            height: 30px;
+        }
+
+        #btenviar {
+      margin-top: 2%;
+      background-color: chocolate;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+
+    #btenviar:hover {
+      background-color: crimson;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+
+    #mensaje{
+        color: chocolate;
+        text-align: center;
+      }
+
+    #btlimpiar {
+      margin-top: 2%;
+      background-color: chocolate;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+    #btlimpiar:hover {
+      background-color: crimson;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+
+    .registro {
+      text-align: center;
+      color: white;
+      padding: 2%;
+      font-size: 18px;
+      margin-top: 20px;
+
+      border-bottom: solid chocolate;
+    }
+
+    #txtnombre {
+      margin-top: -700px;
+      background-color: white;
+      color: black;
+      width: 180px;
+      height: 25px;
+      border: none;
+
+      box-shadow: 0px 0px 0px 2px chocolate;
+      border-radius: 5px;
+      padding: 1px;
+      font-size: 15px;
+    }
+
+    #txtcorreo {
+      margin-bottom: 20px;
+      background-color: white;
+      color: black;
+      width: 250px;
+      height: 25px;
+      border: none;
+
+      box-shadow: 0px 0px 0px 2px chocolate;
+      border-radius: 5px;
+      padding: 1px;
+      font-size: 15px;
+
+    }
+
+    @media all and (max-width:1500px) {
+   
+      #mensaje{
+        color: chocolate;
+        text-align: center;
+      }
+
+      .registro {
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+      .registrohijos {
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+      #txtnombre {
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 180px;
+        height: 30px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px chocolate;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 15px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+
+      #txtcorreo {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 250px;
+        height: 40px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px chocolate;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 15px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+
+      }
+
+      #txtcomentario {
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 250px;
+        height: 100px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px chocolate;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 18px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 10px;
+
+      }
+
+      .titulonombre {
+        margin-top: 10%;
+        margin-top: 10px;
+        color: white;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 25%;
+        text-align: center;
+
+      }
+
+      .titulo {
+        margin-top: 1px;
+        color: white;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 25%;
+        text-align: center;
+      }
+
+      #btenviar {
+      margin-top: 2%;
+      background-color: crimson;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+
+    #btenviar:hover {
+      background-color: chocolate;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+
+    #btlimpiar {
+      margin-top: 2%;
+      background-color: crimson;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+    #btlimpiar:hover {
+      background-color: chocolate;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+    }
+
+
+    @media all and (max-width:600px) {
+      .menu {
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+      #mensaje{
+        color: #1CB698;
+        text-align: center;
+      }
+
+      .registro {
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+      .registrohijos {
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+      #txtnombre {
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 180px;
+        height: 30px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px #1CB698;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 15px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+      }
+
+
+      #txtcorreo {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 250px;
+        height: 40px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px #1CB698;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 15px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 5px;
+
+      }
+
+      #txtcomentario {
+        margin-top: 20px;
+        background-color: white;
+        color: black;
+        width: 250px;
+        height: 100px;
+        border: none;
+
+        box-shadow: 0px 0px 0px 2px #1CB698;
+        border-radius: 5px;
+        padding: 1px;
+        font-size: 18px;
+        align-items: center;
+        flex-flow: column wrap;
+        padding: 10px;
+
+      }
+
+      .titulonombre {
+        margin-top: 10%;
+        margin-top: 10px;
+        color: white;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 25%;
+        text-align: center;
+
+      }
+
+      .titulo {
+        margin-top: 1px;
+        color: white;
+        text-align: left;
+        font-size: 18px;
+        margin-left: 25%;
+        text-align: center;
+      }
+
+      #btenviar {
+      margin-top: 2%;
+      background-color: crimson;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+
+    #btenviar:hover {
+      background-color: chocolate;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+
+    #btlimpiar {
+      margin-top: 2%;
+      background-color: chocolate;
+      color: white;
+      width: 135px;
+      height: 35px;
+      border-radius: 5%;
+      border: none;
+      font-size: 18px;
+
+    }
+
+    #btlimpiar:hover {
+      background-color: crimson;
+      width: 150px;
+      height: 40px;
+      border-radius: 5%;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+
+
+    }
+
+    }
+
+
+
+
+
+    .titulonombre {
+      margin-top: 10%;
+      margin-top: 10px;
+      color: black;
+      text-align: left;
+      font-size: 18px;
+      margin-left: 25%;
+
+    }
+
+    .titulo {
+      margin-top: 1px;
+      color: black;
+      text-align: left;
+      font-size: 18px;
+      margin-left: 25%;
+    }
+
+    /*Clase de pie de pagina*/
+    .piedepagina {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      line-height: 30px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+
+    }
+
+    .piedepaginahijo {
+      width: calc((90%-40px)/2);
+      padding-top: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 50px;
+      text-align: center;
+      color: black;
+      flex: 1 400px;
+
+    }
+  </style>
+
+<script>
+  function calculo() {
+    var nombres = document.getElementById('txtnombre').value;
+    var correo = document.getElementById('txtcorreo').value;
+    var comentario = document.getElementById('txtcomentario').value;
+
+    if (nombres.length == 0 || correo.length == 0 || comentario.length == 0) {
+      document.getElementById('mensaje').innerHTML = 'no puede quedar vacío';
+      document.getElementById('txtnombre').focus();
+      document.getElementById('txtcorreo').focus();
+      document.getElementById('txtcomentario').focus();
+      return false;
+
+    }
+    else {
+      return true;
+    }
+  }
+</script>
+</head>
+<body>
+  <div class="menu">
+    <h2 class="titu">Croacia Hosting</h2>
+    <ul class="menu">
+        <li>
+            <a href="Index.html">Inicio</a></br>
+        </li>
+        <li>
+            <a href="Index.html">Información</a></br>
+        </li>
+        <li>
+            <a href="Index.html">Productos</a></br>
+        </li>
+        <li>
+            <a href="Index.html">Precios</a></br>
+        </li>
+        <li>
+            <a href="Index.html">Contatos</a></br>
+        </li>
+        
+    </ul>
+</div>
+
+<p id="mensaje"></p>
+  <div class="registro">
+    <div class="registrohijos">
+      <form name="datos" id="datos" method="post" action="registro.php">
+        <p class="titulonombre">Nombres Completo:</p> <input name="txtnombre" id="txtnombre" type="text" /></br><br>
+        <p class="titulo">Correo:</p> <input name="txtcorreo" id="txtcorreo" type="text" /></br><br>
+        <p class="titulo">Comentarios:</p> <textarea name="txtcomentario" id="txtcomentario" rows="10"
+          cols="50"> </textarea><br>
+        <input name="btenviar" id="btenviar" type="submit" value="Registro" onclick="return calculo()">
+        <input name="btlimpiar" id="btlimpiar" type="reset" value="Limpiar" />
+      </form>
+    </div>
+  </div>
+
+  <div class="piedepagina">
+    <div class="piedepaginahijo">
+        <p>
+            No es un sitio oficial<br>
+            Not an Official Site!
+        </p>
+    </div>
+    <div class="piedepaginahijo">
+        Diseñado por Claudia Matute
+    </div>
+</div>
+</body>
+</html>

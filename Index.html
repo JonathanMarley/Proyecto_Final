@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Croacia Hosting">
+    <title>Pais croacia</title>
+    <!-- CSS -->
+    <style>
+        * {
+            font-family: 'Monseran';
+            margin: 0;
+            padding: 0;
+            background-color: lavender;
+
+
+        }
+
+        .menu {
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            list-style: none;
+            line-height: 60px;
+            padding: 0.6%;
+            background-color: lavender;
+            /*fondo menu*/
+        }
+
+        .menu h2 {
+            padding: 0.2%;
+            max-width: 15%;
+            height: auto;
+            color: black;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: darkgray;
+            /*letra menu*/
+            padding: 26px 20px 26px 12px;
+            font-size: 20px;
+
+        }
+
+        .menu a:hover {
+            /*background-color:black ;  cambio al de l aletra al darle click*/
+            font-size: 20px;
+            color: black;
+            /*cambio al de l aletra */
+            width: 80px;
+            height: 30px;
+        }
+
+        #txtregistro {
+            margin-top: 2%;
+            background-color: chocolate;
+            /*color boton */
+            color: white;
+            width: 125px;
+            height: 35px;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            /*MANO EN EL boton */
+
+        }
+
+        #txtregistro:hover {
+            margin-top: 2%;
+            background-color: crimson;
+            /*color boton */
+            color: white;
+            width: 135px;
+            height: 35px;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            /*MANO EN EL boton */
+        }
+
+        .fondo img {
+            /*imagen e fondo */
+            margin-top: 100px;
+            display: block;
+            width: 100%;
+            margin: auto;
+            border-top: solid coral;
+            border-bottom: solid chocolate;
+
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*centre info*/
+            margin: auto;
+            border-bottom: solid chocolate;
+        }
+
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .info img {
+            max-width: 100%;
+            border-radius: 2%;
+
+        }
+
+        .info img:hover {
+            box-shadow: 0px 0px 5px 5px coral;
+            border-bottom: solid chocolate;
+            /*border img*/
+        }
+
+        .infohijo {
+            width: calc((90%-40px))/2;
+            /*estamos restando 40 a 90px*/
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            flex: 1 400px;
+        }
+
+        #txtaplicar {
+            margin-top: 2%;
+            background-color: chocolate;
+            /*color boton */
+            color: white;
+            width: 135px;
+            height: 35px;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            /*MANO EN EL boton */
+        }
+
+        #txtaplicar:hover {
+            margin-top: 2%;
+            background-color: crimson;
+            /*color boton */
+            color: white;
+            width: 135px;
+            height: 35px;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+            /*MANO EN EL boton */
+        }
+
+        .titu {
+            font-size: 25px;
+        }
+
+        /*------BENEFICIO ---------*/
+        .beneficio {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-gap: 30px;
+            grid-row-gap: 30px;
+            width: 100%;
+            padding: 2%;
+            border-bottom: solid chocolate;
+        }
+
+        .beneficiohijo {
+            max-width: 200px;
+            padding: 10px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 0px 2px rgb(172, 170, 170);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+
+        .beneficiohijo:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+            max-width: 200px;
+            padding: 10px;
+
+        }
+
+        .img-hosting {
+            max-width: 100%;
+            max-height: 10%;
+            background-color: white;
+        }
+
+
+        .titulo {
+            padding: 10%;
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+
+        .video {
+            text-align: center;
+            padding: 2%;
+            border-bottom: solid chocolate;
+
+
+        }
+
+        /*------------Clase de Maxima beneficio Honstiger*-------*/
+        .beneficioHonstiger {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+
+
+        }
+
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: black;
+            font-size: 40px;
+        }
+
+
+
+
+        .imgbeneficiohostinger {
+            max-width: 99%;
+            border-radius: 2%;
+
+        }
+
+        .imgbeneficiohostinger:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+
+        }
+
+        /*Acerca De nosotros hijos*/
+        .beneficioHonstigerhijo {
+            width: calc((90%-40px)/2);
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            color: black;
+            flex: 1 400px;
+            border-bottom: solid chocolate;
+        }
+
+
+        /*------Clientes ---------*/
+        .clientes {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-gap: 60px;
+            grid-row-gap: 60px;
+            width: 100%;
+            padding: 2%;
+            border-bottom: solid chocolate;
+        }
+
+        .clientehijo {
+            max-width: 200px;
+            padding: 5px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 0px 2px rgb(110, 110, 110);
+            border-radius: 10px;
+            padding: 60px;
+            transition: .3s;
+        }
+
+
+        .clientehijo:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+            max-width: 200px;
+            padding: 40px;
+        }
+
+        .titulos {
+            color: #6218da;
+            align-items: center;
+            background-color: white;
+            cursor: pointer;
+        }
+
+        /*------PRODUCTO ---------*/
+        .seccionProducto {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-gap: 30px;
+            grid-row-gap: 30px;
+            width: 100%;
+            padding: 2%;
+            border-bottom: solid chocolate;
+        }
+
+        .productoItem {
+            max-width: 200px;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(212, 206, 206);
+            box-shadow: 0px 0px 0px 2px rgb(150, 149, 149);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+
+        .productoItem:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+            max-width: 200px;
+            padding: 10px;
+        }
+
+
+        #txtComprar {
+            display: block;
+            background-color: crimson;
+            color: white;
+            width: 130px;
+            height: 40px;
+            margin: 10px auto;
+            border-radius: 5%;
+            border: none;
+            cursor: pointer;
+        }
+
+
+        /*---------Precioos-------------*/
+        .precios {
+            text-align: center;
+        }
+
+        .productoItem {
+            max-width: 200px;
+            padding: 10px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 0px 2px rgb(136, 136, 136);
+            border-radius: 10px;
+            padding: 20px;
+            transition: .3s;
+        }
+
+        #txtanual {
+            margin-top: 2%;
+
+            background-color: chocolate;
+            color: white;
+            width: 200px;
+            height: 50px;
+            border-radius: 5%;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        #txtanual:hover {
+            background-color: crimson;
+            width: 210px;
+            height: 60px;
+            border-radius: 5%;
+            list-style: none;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+
+
+        }
+
+        /*------Precios ---------*/
+        .preciosanual {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-gap: 60px;
+            grid-row-gap: 60px;
+            width: 100%;
+            padding: 2%;
+            border-bottom: solid chocolate;
+        }
+
+        .preciosanualhijos {
+            max-width: 200px;
+            padding: 10px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0px 0px 0px 2px chocolate;
+            border-radius: 10px;
+            padding: 60px;
+        }
+
+
+        .preciosanualhijos:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+            max-width: 200px;
+            padding: 45px;
+        }
+
+        /*Contactenos*/
+        .clasecontactenos {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: black;
+            margin: auto;
+            border-bottom: solid chocolate;
+
+        }
+
+        .clasecontactenos img {
+            max-width: 99%;
+            border-radius: 5%;
+        }
+
+        .clasecontactenos img:hover {
+            box-shadow: 0px 0px 5px 5px chocolate;
+        }
+
+        /*Acerca De nosotros hijos*/
+        .contactenoshijos {
+            width: calc((90%-40px)/2);
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            color: gray;
+            flex: 1 400px;
+        }
+
+        #txtcontacto {
+            margin-top: 2%;
+
+            background-color: chocolate;
+            color: white;
+            width: 200px;
+            height: 50px;
+            border-radius: 5%;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        #txtcontacto:hover {
+            background-color: crimson;
+            width: 210px;
+            height: 60px;
+            border-radius: 5%;
+            list-style: none;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+
+
+        }
+
+
+
+
+        /*mapa*/
+        .mapa {
+            text-align: center;
+            border-bottom: solid chocolate;
+            padding: 2%;
+        }
+
+        /*Clase de pie de pagina*/
+        .piedepagina {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            line-height: 30px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+
+        }
+
+        .piedepaginahijo {
+            width: calc((90%-40px)/2);
+            padding-top: 50px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+            text-align: center;
+            color: black;
+            flex: 1 400px;
+
+        }
+    </style>
+    <script>
+        function login() {
+            window.location.href = "Registro.html"
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="menu">
+        <h2 class="titu">Croacia Hosting</h2>
+        <ul class="menu">
+            <li>
+                <a href="Index.html">Inicio</a></br>
+            </li>
+            <li>
+                <a href="#informacion">Información</a></br>
+            </li>
+            <li>
+                <a href="#producto">Productos</a></br>
+            </li>
+            <li>
+                <a href="#precio">Precios</a></br>
+            </li>
+            <li>
+                <a href="#contactanos">Contactanos</a></br>
+            </li>
+            <a>
+                <input name="txtregistro" id="txtregistro" type="button" value="REGISTRAR" onclick="login()">
+
+            </a>
+        </ul>
+    </div>
+
+
+    <div class="fondo">
+        <img src="img/fondo.jpg" alt="fondo">
+    </div>
+
+    <a name="informacion"></a>
+    <h2>Infromacion adicional del croacia Hosting</h2>
+    <div class="info">
+        <div class="infohijo">
+            <h2>CROACIA HOSTING</h2>
+            <P>Todo lo que necesitas para crear un sitio wed<br>
+                Te ofrecemos los mejores servicios a un descuento del 25%<br>
+                Aprovecha de nuestro Hosting en Oferta a un precio razonable.</P><br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos suscipit dolores, esse neque at
+                officiis illo sit repellat fugit vitae?
+            </p><br>
+            <input name="txtaplicar" id="txtaplicar" type="button" value="MAS INFROMACION">
+        </div>
+        <div class="infohijo">
+            <img src="img/promocion.png" alt="fondo">
+        </div>
+    </div>
+
+    <h2>Beneficios de usar CROACIA HOSTING</h2>
+    <div class="beneficio">
+        <div class="beneficiohijo">
+            <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam animi
+                explicabo </p>
+        </div>
+        <div class="beneficiohijo">
+            <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam animi
+                explicabo </p>
+        </div>
+        <div class="beneficiohijo">
+
+            <p class="titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates aliquam animi
+                explicabo </p>
+        </div>
+    </div>
+
+    <h2>Video de CROACIA HOSTING</h2>
+
+    <div class="video">
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YZWRvLeT_KU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+
+    <h2>Maximiza la velocidad del sitio web usando CROACIA HOSTING</h2>
+    <div class="beneficioHonstiger">
+        <div class="beneficioHonstigerhijo">
+            <img src="img/servis.png" class="imgbeneficiohostinger">
+        </div>
+        <div class="beneficioHonstigerhijo">
+            <h2>DISFRUTA TU <b>EXPERIENCIA</b> </h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores harum recusandae inventore praesentium
+                consequuntur vel!.<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, vitae?.<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quis?.
+            </p>
+        </div>
+    </div>
+
+    <!--Clientes-->
+
+    <h2>Nuestros Clientes CROACIA HOSTING</h2>
+    <div class="clientes">
+        <div class="clientehijo">
+            <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam provident sit officiis
+                quas a, deserunt ducimus obcaecati eligendi excepturi qui!</p>
+            </p>
+            <p class="titulos">Leer toda la historia... </p>
+            <hr><br>
+        </div>
+
+        <div class="clientehijo">
+            <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam provident sit officiis
+                quas a, deserunt ducimus obcaecati eligendi excepturi qui!</p>
+            </p>
+            <p class="titulos">Leer toda la historia... </p>
+            <hr><br>
+        </div>
+        <div class="clientehijo">
+            <p class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam provident sit officiis
+                quas a, deserunt ducimus obcaecati eligendi excepturi qui!</p>
+            </p>
+            <p class="titulos">Leer toda la historia... </p>
+            <hr><br>
+        </div>
+    </div>
+
+    <a name="producto"></a>
+    <h2>Productos CROACIA HOSTING</h2>
+
+    <div class="seccionProducto">
+        <div class="productoItem">
+            <p class="titulo">Hosting Nube</p>
+            <p class="titulo">Mitad de precio<br>
+                +2 Meses Completamente Gratis
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+
+        <div class="productoItem">
+            <p class="titulo">Hosting Nube</p>
+            <p class="titulo">Mitad de precio<br>
+                +2 Meses Completamente Gratis
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+
+        <div class="productoItem">
+            <p class="titulo">Hosting Nube</p>
+            <p class="titulo">Mitad de precio<br>
+                +2 Meses Completamente Gratis
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+
+        <div class="productoItem">
+            <p class="titulo">Hosting Nube</p>
+            <p class="titulo">Mitad de precio<br>
+                +2 Meses Completamente Gratis
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+    </div>
+
+    <a name="precio"></a>
+    <h2>Precios CROACIA HOSTING</h2>
+    <div class="precios">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, consectetur!
+            <br>
+            Ahorra un 20%
+        </p>
+        <input name="txtanual" id="txtanual" type="button" value="Plan Anual">
+    </div>
+
+    <div class="preciosanual">
+        <div class="preciosanualhijos">
+            <p class="titulo">Hosting Sencillo</p>
+            <p class="titulo">La solución ideal para principiantes<br><br>
+                7,99$ AHORA 81%<br>
+                <hr>
+                1,49$/mes
+
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+
+        <div class="preciosanualhijos">
+            <p class="titulo">Hosting Premium</p>
+            <p class="titulo">El paquete perfecto para webs personales<br><br>
+                10,49$ AHORA 75%<br>
+                <hr>
+                2,59$/mes<br>
+
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+
+        <div class="preciosanualhijos">
+            <p class="titulo">Hosting Empresarial</p>
+            <p class="titulo">Optimizado para pequeñas empresas<br><br>
+                15,99$ AHORA 75%<br>
+                <hr>
+                3,99$/mes
+
+            </p>
+            <input name="txtComprar" id="txtComprar" type="button" value="Comprar Ahora">
+        </div>
+    </div>
+
+    <a name="contactanos"></a>
+    <h2>Contacta a nuestro personal CROACIA HOSTING</h2>
+
+    <div class="clasecontactenos">
+        <div class="contactenoshijos">
+            <h2>Bienvenido a nuestra comunidad</h2>
+            <p>www.croaciahosting.com</p>
+            <h2>CROACIA HOSTING</h2><br>
+            <p>Croacia, Zagreb. Antiguo edificio casa de Zagreb</p><br>
+            <p>Phone Number: (918) 720-0500</p><br>
+            <p>Email: Hostingcroacia@gmail.com</p>
+            <br>
+
+            <input name="txtcontacto" id="txtcontacto" type="button" value="Contactanos">
+
+        </div>
+        <div class="contactenoshijos">
+            <img src="img/cro.png">
+        </div>
+    </div>
+
+    <h2>Ciudad de CROACIA HOSTING</h2>
+    <div class="mapa">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d721459.2545756329!2d14.132650616638992!3d45.0614494852256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133441080add95ed%3A0xa0f3c024e1661b7f!2sCroacia!5e0!3m2!1ses-419!2shn!4v1691463862341!5m2!1ses-419!2shn"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="piedepagina">
+        <div class="piedepaginahijo">
+            <p>
+                No es un sitio oficial<br>
+                Not an Official Site!
+            </p>
+        </div>
+        <div class="piedepaginahijo">
+            Diseñado por Claudia Matute
+        </div>
+    </div>
+
+</body>
+
+</html>
